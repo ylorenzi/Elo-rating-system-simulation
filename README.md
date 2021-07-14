@@ -5,6 +5,7 @@
 Table of contents:
 - [Introduction](#introduction) 
 - [The math behind the Elo system](#the-math-behind-the-elo-system)
+- Simulation (#2-simulation)
 
 ## Introduction
 
@@ -55,7 +56,7 @@ If Player B wins the the new rating will be:
 - Player A = 1700 + 100 x (0 - 0.76) = 1624
 - Player B = 1500 + 100 x (1 - 0.24) = 1576
 
-## 2 - Simulation
+## 2 Simulation
 
 The first step of the simulation is determining how is the simulation of a single match. It was chosen a very simple method. Following the Glickman (1995) analogy, in a match, there will randomly be generated a number for each player. The player with the highest number is declared the winner. The distribution from which the number is genated is a Normal distribuition, with mean equal the skill of the player. This means that players with higher skill will, on average, generate higher numbers, and consequently, win more games. 
 
