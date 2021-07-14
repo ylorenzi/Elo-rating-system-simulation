@@ -3,9 +3,12 @@
 > This code was developed for my dissertation for obtaining the title of Master in Economics from the University of Santa Catarina.
 
 Table of contents:
-- [Introduction](#1--introduction)
-- [The math behind the Elo system](#11--the-math-behind-the-elo-system)
-- [Simulation](#simulation)
+
+- [1- Introduction](#1--introduction)
+  * [1.1- The math behind the Elo system](#11--the-math-behind-the-elo-system)
+  * [1.2- Elo rating system formulas](#12--elo-rating-system-formulas)
+
+- [2- Simulation](#2--simulation)
 
 ## 1- Introduction
 
@@ -18,7 +21,7 @@ However, in online games, some players perceive the Elo system as unfair because
 
 Glickman (1995) presents an intuitive explanation of what is the logic behind the Elo system. Supose that in a game of chess, insted of the two players actually playing the game, both of them bring boxes with pieces of pappers, each one with a number written on them. Both players randomly draw a piece from their boxes and the player with the highest number wins.
 
-## Elo rating system formulas
+## 1.2- Elo rating system formulas
 
 If you ever played an competitive online game you might have heard about the Elo rating system. It's a statistical method that aims to estimate player ability. It was originally developed for chess and has become one of the main methods of estimating competitor skills in various sports.
 
@@ -56,7 +59,7 @@ If Player B wins the the new rating will be:
 - Player A = 1700 + 100 x (0 - 0.76) = 1624
 - Player B = 1500 + 100 x (1 - 0.24) = 1576
 
-## Simulation
+## 2- Simulation
 
 The first step of the simulation is determining how is the simulation of a single match. It was chosen a very simple method. Following the Glickman (1995) analogy, in a match, there will randomly be generated a number for each player. The player with the highest number is declared the winner. The distribution from which the number is genated is a Normal distribuition, with mean equal the skill of the player. This means that players with higher skill will, on average, generate higher numbers, and consequently, win more games. 
 
