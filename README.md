@@ -3,18 +3,18 @@
 > This code was developed for my dissertation for obtaining the title of Master in Economics from the University of Santa Catarina.
 
 Table of contents:
-- [Introduction](#introduction) 
-- [The math behind the Elo system](#the-math-behind-the-elo-system)
-- Simulation (#2-simulation)
+- [Introduction](#1--introduction)
+- [The math behind the Elo system](#11--the-math-behind-the-elo-system)
+- [Simulation](#simulation)
 
-## Introduction
+## 1- Introduction
 
 The Elo rating system is a statistical method that aims to estimate player ability. It was developed by the physicist Arpad Elo for chess, and nowadays it´s widely used in sports and multiplayer online games. One of the main advantages from Elo is that it is very intuitive. If you win you gain rating points and if you lose you lose rating points.
 Beating higher rated opponets rewards more points than lower rated ones. And losing to lower rated opponents subtracts more points than losing to higher rated ones. 
 
 However, in online games, some players perceive the Elo system as unfair because it's increadible hard to increase their rating. At first glance, it may seem ilogical, since if your rating is below what is should've been, you should be winning (on average) most of your games until your rating converges to it's "true" value. But since this perception is so widespread, it motivated me to develop this project and test if the hypotesis of a player being stuck with a rating lower than his skill could be explained by behavorial economics.  
 
-## The math behind the Elo system
+## 1.1- The math behind the Elo system
 
 Glickman (1995) presents an intuitive explanation of what is the logic behind the Elo system. Supose that in a game of chess, insted of the two players actually playing the game, both of them bring boxes with pieces of pappers, each one with a number written on them. Both players randomly draw a piece from their boxes and the player with the highest number wins.
 
@@ -56,7 +56,7 @@ If Player B wins the the new rating will be:
 - Player A = 1700 + 100 x (0 - 0.76) = 1624
 - Player B = 1500 + 100 x (1 - 0.24) = 1576
 
-## 2 Simulation
+## Simulation
 
 The first step of the simulation is determining how is the simulation of a single match. It was chosen a very simple method. Following the Glickman (1995) analogy, in a match, there will randomly be generated a number for each player. The player with the highest number is declared the winner. The distribution from which the number is genated is a Normal distribuition, with mean equal the skill of the player. This means that players with higher skill will, on average, generate higher numbers, and consequently, win more games. 
 
