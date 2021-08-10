@@ -1,5 +1,6 @@
 # Elo-rating-system-simulation 
 
+$x^2 +10$
   
 
 > This code was developed for my dissertation for obtaining the title of Master in Economics from the University of Santa Catarina. 
